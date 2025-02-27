@@ -1,7 +1,7 @@
 version: '3'
 services:
   nestjs:
-    image: nestjs-app:latest
+    image: docker-nest-app
     build:
       context: .
       dockerfile: Dockerfile
