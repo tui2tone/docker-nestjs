@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nestjs:
+    image: nestjs-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Exposing port 3000 for NestJS
+    environment:
+      NODE_ENV: production  # Set environment variable
